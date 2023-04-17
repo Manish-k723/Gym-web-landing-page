@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almighty Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rubik+Pixels&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            color: white;
+            /* CSS reset; */
+            margin: 0px;
+            padding: 0px;
+            background: url('gym5.jpg');
+            height: 1270px;
+            /* background-repeat: no-repeat; */
+            font-family: 'Balsamiq Sans', cursive;
+
+        }
+
+        .left {
+            /* border: 4px solid red; */
+            /* float: left; */
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 25px;
+            text-align: center;
+        }
+
+        .center {
+            /* border: 4px solid blue; */
+            /* display: inline-block; */
+            margin: 32px auto;
+            width: 35%;
+
+        }
+
+        .right {
+            /* border: 4px solid green; */
+            position: absolute;
+            right: 20px;
+            top: 47px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 30px 25px;
+            /* font-size: 25px; */
+        }
+
+        .navbar li a:hover,
+        li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 83px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        /* .left{
+            text-align: center;
+        } */
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 10px;
+            font-size: 20px;
+            border: 2px solid grey;
+            border-radius: 9px;
+            cursor: pointer;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        .btn:hover {
+            background-color: grey;
+            color: black;
+        }
+
+        .container {
+            border: 3px solid white;
+            margin: 129px 121px;
+            padding: 42px 40px;
+            width: 36%;
+            border-radius: 26px;
+        }
+        .container form{
+            text-align: center;
+        }
+        .form input {
+            text-align: center;
+            display: block;
+            border-radius: 7px;
+            font-size: 22px;
+            padding: 5px;
+            width: 508px;
+            margin: 7px auto;
+            display: inline-block;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            margin: auto;
+            width: 23%;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <!-- Left box for log -->
+            <img src="gymlogo.jpg">
+            <div>Almighty Gym</div>
+        </div>
+        <div class="center">
+            <!-- For Navigantion buttons -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">View Gym</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- Search or Join buttons -->
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="text-align: center;">Join the best gym of Delhi now</h1>
+        <form action="no_action.php" class="action">
+            <div class="form">
+                <input type="text" name="username" placeholder="Enter your name">
+            </div>
+            <div class="form">
+                <input type="text" name="email" placeholder="Enter you Email ID">
+            </div>
+            <div class="form">
+                <input type="text" name="phone" placeholder="Enter your mobile number">
+            </div>
+            <div class="form">
+                <input type="text" name="Pincode" placeholder="Enter you Area Pincode">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
